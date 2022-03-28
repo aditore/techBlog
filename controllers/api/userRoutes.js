@@ -123,7 +123,7 @@ router.put('/:id', async (req, res) => {
             }
         });
 
-        if (!updateUser[0]) {
+        if (!updateUser) {
             res
                 .status(400)
                 .json({ message: 'No user found'});
@@ -145,7 +145,7 @@ router.delete('/:id', async (req, res) => {
             }
         });
 
-        if (!deleteUser[0]) {
+        if (!deleteUser) {
             res
                 .status(400)
                 .json({ message: 'No user found' });
