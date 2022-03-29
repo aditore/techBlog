@@ -32,4 +32,21 @@ router.get('/', async (req, res) => {
     }
 });
 
+//login
+router.get('/login', (req, res) => {
+    if (req.session.logged_in) {
+        res.redirect('/');
+    }
+
+    res.render('login');
+});
+
+//signup
+router.get('/signup', (req, res) => {
+    if (req.session.logged_in) {
+        res.redirect('/');
+    }
+
+    res.render('signUp');
+})
 module.exports = router;
