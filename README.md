@@ -30,7 +30,7 @@ Requires the database MySQL
 
 ## Usage
 
-!alt[website_home](./public/images/techblog.png)
+![website_home](./public/images/techblog.png)
 
 ```md
 GIVEN a CMS-style blog site
