@@ -70,7 +70,12 @@ router.get('/edit/:id', withAuth, async (req, res) => {
             return;
         }
 
-        res.status(200).json(findOnePost);
+        const posts = findOnePost.get({ plain: true });
+
+        res.render('editPost', {
+            posts, 
+            logged_in: req.session.logged_in 
+        });
     } catch (err) {
         res.status(500).json(err);
     }
