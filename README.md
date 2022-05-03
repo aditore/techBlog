@@ -1,32 +1,45 @@
 # techBlog
 
-## Heroku Link
-
-https://techblog-aditore.herokuapp.com/
-
 ## Description
 
-This is a web application that allows users to create login to create blog posts and to leave comments while logged in. I learned a lot about handlebars and routes from making this thing work! This website can be used to post various topics and content within those topics. You can view your posts and delete them if you want!
+This is a web application that allows users to create an account, login to create blog</br>
+posts and to leave comments while logged in. After login, from the homepage a user can see other user posts,</br>
+and can click on the posts to leave comments. By clicking on the dashboard link in the navbar a</br>
+user can create a blog post, or delete a blog post they have already posted. A user can also logout by clicking</br>
+the logout link in the navbar.</br>
+
+## Learned
+
+- Session store with sequelize
+- bcrypt password handling
+- Handlebars (layouts, partials)
+- Controller routes through handlebars
+- Fetch built API from MySQL
 
 ## Table of Contents
 
 - [Description](#description)
+- [Learned](#learned)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Credits](#credits)
 
 ## Installation
 
-Requires npm  
-* express
-* dotenv
-* sequelize
-* mysql2
-* bcrypt
-* connect-session-sequelize
-* express-handlebars
-* express-session
+NPM | Notes
+--- | ---
+express | Connection to server
+dotenv | Allows for environnment files to be accessed
+sequelize | MySQL package to allow for cleaner coding
+mysql2 | MySQL package to access database
+bcrypt | Password encryption
+connect-session-sequelize | Store sessions with sequelize
+express-handlebars | Express connection to handlebars
+express-session | Express connection to the session
 
-Requires the database MySQL  
+Database | Notes
+--- | ---
+MySQL | Uses MySQL to store users, blog posts and comments
 
 ## Usage
 
@@ -67,3 +80,14 @@ THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add comments
 ```
+## Credits
+
+Deployed to Heroku at: https://techblog-aditore.herokuapp.com/
+
+Code by: Anthony Ditore</br>
+Github: [aditore](https://github.com/aditore)</br>
+
+## Features
+
+- MySQL database
+- Bootstrap
